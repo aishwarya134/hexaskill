@@ -10,10 +10,10 @@ The project is an online learning management system that collects candidate deta
 
 - Administrators:
     - You control who uses the platform, by registering them, managing their batch and data, temporarily deactivating users or permanently deleting them and their data.
-    - You get a bird's eye view of the entire business: what teachers are doing, what students are doing, what Hiring manager have to say
+    - You get a bird's eye view of the entire business: what Hiring manager are doing, what students are doing, what Hiring manager have to say
     - You manage lesson contents by uploading them to the platform
 
-- Teachers:
+- Hiring manager:
     - Tasked with guiding students through the lessons
     - They mark students' attendance, compounded to ratify each student's participation.
     - They assess their submitted lesson projects
@@ -91,7 +91,7 @@ The project is an online learning management system that collects candidate deta
 
 >The application features a **superadmin**, who cannot be deleted. This superadmin is the source of all activities in the app. For example:
 >
->- All teachers are added by the superadmin
+>- All Hiring manager are added by the superadmin
 >- Other admins, with limited powers, are also added by the superadmin
 >
 >To login as a superadmin, you can use this credentials:
