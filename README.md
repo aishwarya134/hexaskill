@@ -76,6 +76,7 @@ The project is an online learning management system that collects candidate deta
 
 
 ## Application Details
+![WhatsAppVideo2024-09-03at8 05 41PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/98d885be-9a21-4876-8c3f-98c56c7d257e)
 
 ### Newsletter:
 
