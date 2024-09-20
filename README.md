@@ -49,7 +49,7 @@ The project is an online learning management system that collects candidate deta
 - Newsletter subscription
 - Basic user authentication
 - Two-factor authentication
-- 24/7 chatbot
+- 24/7 chatbot Assistant
 - AI valuation engine
 - Reporting
 - Sending of emails from the app
