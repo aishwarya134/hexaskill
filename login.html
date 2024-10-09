@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Skill Navigation</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="logo.png " alt="Skill Navigation Logo">
+        </div>
+  <div class="home-button">
+            <a href="index.html">Home</a> <!-- Link to your home page -->
+        </div>
+        <form action="course.html" method="POST" class="login-form">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required> <br><br>
+            </div>
+            <div class="action-buttons">
+                <button type="submit">Login</button>
+            </div>
+            <div class="extra-links">
+                <a href="#">Forgot Password?</a>
+                <a href="register.html">Create an Account</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Initialize the Auth0 client
+        var auth0 = null;
+        
+        async function configureClient() {
+          auth0 = await createAuth0Client({
+            domain: "demo-134.us.auth0.com", // Replace with your Auth0 domain
+            client_id: "xgZt82udf90252HgbmKUw8fiZSzJDNxj", // Replace with your Auth0 client ID
+            redirect_uri: course.html // Redirect after login
+          });
+        }
+        
+        window.onload = async () => {
+          await configureClient();
+        
+          // Check if user is already authenticated
+          const isAuthenticated = await auth0.isAuthenticated();
+          
+          if (isAuthenticated) {
+            console.log("User is authenticated");
+            // Redirect or display user data
+          }
+        };
+        
+        async function login() {
+          await auth0.loginWithRedirect({
+            redirect_uri: window.location.origin
+          });
+        }
+      </script>
+      
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Dashboard</title>  
+    <link rel="stylesheet" href="dashstyle.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+
+</head>  
+<body>  
+    <div class="header">  
+      <!-- <input type="text" placeholder="Search or type" />  -->
+        <div class="user-profile">  
+            <img src="profile.png" alt="User Profile" />  
+        </div>  
+    </div>  
+    <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button> <!-- Menu icon button -->
+
+    <div class="dashboard">  
+        <div class="activities">  
+            <h2>Activities</h2>  
+            <img src="graph.png" alt="Activity Image" style="width:100%; height:auto;">  
+            <canvas id="activityChart"></canvas>  
+        </div>  
+        
+        <div class="statistics">  
+            <h2>Statistics</h2> 
+            <img src="image.png" alt="Activity Image" style="width:100%; height:auto;">   
+            <canvas id="statisticsChart"></canvas>  
+        </div>  
+
+        <div class="course-activities">  
+            <h2>Course Activities</h2>  
+            <div class="progress">  
+                <div class="progress-bar" style="width: 75%;">75%</div>  
+            </div>  
+        </div>  
+
+        <div class="top-tutors">  
+            <h2>Top Tutors</h2>  
+            <ul>  
+                <li>Anna Karlos - Programming</li>  
+                <li>Karla May - Maths</li>  
+            </ul>  
+        </div>  
+
+        <div class="my-planning">  
+            <h2>My Planning</h2>  
+            <ul>  
+                <li>Batch-wise Score Card - December 14, 08:30 PM</li>  
+                <li>College-wise Score Card - December 18, 10:30 PM</li>  
+                <li>Trainers' Feedback Analysis Report - December 22, 10:30 PM</li>  
+            </ul>  
+        </div>  
+
+        <div class="completed-courses">  
+            <h2>Completed Courses</h2>  
+            <ul>  
+                <li>Java Code - 75/100</li>  
+                <li>Design Basic - 65/100</li>  
+                <li>Team Building - 30/100</li>  
+            </ul>  
+        </div>  
+    </div>  
+    <script src="chatbot.js"></script>
+    
+</body>  
+</html>
